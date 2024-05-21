@@ -1,11 +1,12 @@
 import React from 'react';
 
 const UserCard = ({ name, avatar, biography }) => (
-    <div className="user-card">
-        <h2>{name}</h2>
-
-        <img src={avatar} alt={name} className="avatar" />
-        <div className="user-info">
+    <div class="user-card">
+        <div class="user-avatar">
+            <img src={avatar} alt={name} className="avatar" />
+        </div>
+        <div class="user-details">
+            <h2>{name}</h2>
             <p>{biography}</p>
         </div>
     </div>
